@@ -1,0 +1,109 @@
+#macro(pager $__url $___Page)
+    #set($liststep = 9)
+    #set($pagesize = $___Page.pageSize)
+    #set($pages = $___Page.pageNo)
+    #set($count = $___Page.totalCount)
+
+    #if($__url.indexOf('?')>-1)##参数连接符号
+        #set($__and='&')
+    #else
+        #set($__and='?')
+    #end
+## 计算总页数
+    #set($temp=$count + $pagesize)
+    #set($temp=$temp - 1)
+    #set($pagescount=$temp/$pagesize)
+
+    #if($pagescount > 0)
+        #if($pagescount < $pages)
+            #set($pages=$pagescount)##如果分页变量大总页数，则将分页变量设计为总页数
+        #end
+
+        #if($pages < 1)
+            #set($pages = 1)##如果分页变量小于１,则将分页变量设为１
+        #end
+
+        #if($pagescount < $liststep)##如果一共要显示的页数大于总页数，则将一共要显示的页数设为总页数
+            #set($liststep = $pagescount)
+        #end
+
+        #set($lstmp = $liststep / 2)
+        #set($listbegin = $pages - $lstmp)##从第几页开始显示分页信息 ##当前页-(总显示的页列表数/2)
+
+        #set($lstmp2 = $liststep / 2)
+        #set($listend = $pages + $lstmp2)##分页信息显示到第几页//当前页+(总显示的页列表数/2)
+
+        #if($listbegin < 1)
+            #set($listbegin = 1)
+        #end
+
+        #if($listend > $pagescount)
+            #set($listend = $pagescount)
+        #end
+
+        #set($temp3 = $listend - $listbegin)
+        #set($temp3 = $temp3 + 1)  ##计算出从begin到end一共显示几个分页
+        #set($temp3 = $liststep - $temp3) ##计算出缺少几个分页
+        #if($temp3 > 0) ##补足缺少的分页
+            #if($listbegin == 1)
+                #set($listend = $listend + $temp3)
+            #else
+                #set($listbegin = $listbegin - $temp3)
+            #end
+        #end
+
+
+    <nav class="pageNav">
+        <ul class="pagination" style="float: left;">
+            每页显示:
+            <select id="pageSize" class="selectpicker show-tick col-lg-20" onchange="location.href='${__url}${__and}pageSize='+$(this).val()+'&pageNo=1'">
+                <option value="10" #if($pagesize==10) selected #end>10</option>
+                <option value="20" #if($pagesize==20) selected #end>20</option>
+                <option value="50" #if($pagesize==50) selected #end>50</option>
+                <option value="100" #if($pagesize==100) selected #end>100</option>
+            </select>
+        </ul>
+        <ul class="pagination" style="float: right;">
+        ##(显示分页信息)
+        ##<显示上一页
+            #if($pages>1)
+                #set($__pre_page = $pages - 1)
+                <li><a href="${__url}${__and}pageSize=${pagesize}&pageNo=${__pre_page}">上一页</a></li>
+            #end
+        ##第一页
+            #if($listbegin > 1)
+                <li><a href="${__url}${__and}pageSize=${pagesize}&pageNo=1">1</a></li>
+            #end
+        ##省略号
+            #if($listbegin > 2)
+                <li class="disabled"><a href="javascript:void(0);">...</a></li>
+            #end
+        ##<显示分页码
+            #foreach($__p in [$listbegin..$listend])
+                #if($__p!=$pages)##如果__p不等于当前页
+                    <li><a href="${__url}${__and}pageSize=${pagesize}&pageNo=${__p}">${__p}</a></li>
+                #else
+                    <li class="active"><a href="#">${__p}</a></li>
+                #end
+            #end
+        ##省略号
+            #set($beforeLastPage = $pagescount - 1)
+            #if($listend < $beforeLastPage)
+                <li class="disabled"><a href="javascript:void(0);">...</a></li>
+            #end
+        ##最后一页
+            #if($listend < $pagescount)
+                <li><a href="${__url}${__and}pageSize=${pagesize}&pageNo=${pagescount}">$!{pagescount}</a></li>
+            #end
+        ##<显示下一页
+            #if($pages != $pagescount)
+                #set($__pre_page = $pages + 1)
+                <li><a href="${__url}${__and}pageSize=${pagesize}&pageNo=${__pre_page}">下一页</a></li>
+            #end
+            <li><span style="color: #000000">共$!{count}条 $!{pagescount}页</span></li>
+            <input id="pageNoText" type="text" style="height:35px;width: 40px;" placeholder="页码">
+            <button class="btn btn-default" onclick="location.href='${__url}${__and}pageSize=${pagesize}&pageNo='+$('#pageNoText').val();" type="button">跳转</button>
+        </ul>
+    </nav>
+    #end
+#end

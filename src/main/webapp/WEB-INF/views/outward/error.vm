@@ -1,0 +1,10 @@
+#set($page_title="出错了")
+#set($layout="/layout/headerLayout.vm")
+
+#parse("./layout/dialog.vm")
+
+<div style="margin: 150px auto 0px; width: 50%;text-align: center;">
+
+    <h1 style="color: red;">出错了!</h1>
+    <h2><a href="${rc.contextPath}" style="color:#337ab7;">返回首页</a></h2>
+</div>

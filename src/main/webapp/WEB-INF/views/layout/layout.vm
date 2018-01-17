@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+<!--<![endif]-->
+    #parse("./layout/head.vm")
+<body oncopy="return false;" oncontextmenu="return false">
+<!--[if lt IE 7]>
+<p class="browsehappy">您使用的是<strong>已过时</strong>的浏览器。请<a href="http://browsehappy.com/">升级您的浏览器</a>以提高您的使用体验。</p>
+<![endif]-->
+    #parse("./layout/header.vm")
+    $screen_content
+    #parse("./layout/footer.vm")
+
+    #*#parse("./layout/dialog.vm")*#
+</body>
+</html>

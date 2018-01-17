@@ -1,0 +1,68 @@
+div.message-place {
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    right: 400px;
+    z-index: 100000001;
+}
+.form-control-static{
+    margin-top: 0;
+}
+.form-inline .form-group{
+    margin: 5px auto;
+}
+.baseColor{
+    color: #00b7ee;
+}
+.hidden {
+    display: none;
+}
+.qrCode{
+    position: fixed;
+    background-color: #fff;
+    bottom: 10px;
+    right: 10px;
+}
+.navbar-header .navbar-brand{
+    padding: 2px 15px;
+    cursor: pointer;
+}
+/********  表格 垂直居中  *********/
+.table tr th{text-align: center;}
+.table tr td,.table tr th{vertical-align:middle!important;text-align: center;}
+
+/********  分页上部为0px margin  *********/
+.pageNav > ul{
+    margin-top: 0px;
+}
+/* 重写success button*/
+.btn-success,.btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open > .dropdown-toggle.btn-success{
+    background-color: #00b7ee;
+    border-color: #00b7ee;
+}
+
+.form-horizontal .label-lg{
+    font-size: 16px;
+    padding-top: 14px;
+}
+
+/********* begin footer ***********/
+.footer-nav{
+    color: #333;
+    font-family: Arial,"宋体",Lucida,Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+}
+.footer-nav .copy-right {
+    margin: 0 auto;
+    width: 80%;
+    border-top: 1px dashed #ccc;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/*select 校验样式纠正*/
+.form-horizontal .has-feedback select + i.form-control-feedback{
+    right: 30px;
+}

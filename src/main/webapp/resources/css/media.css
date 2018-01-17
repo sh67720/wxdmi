@@ -1,0 +1,397 @@
+@charset "utf-8";
+@media (max-width:1800px) {
+.wrap2 {max-width:100%;padding:0 3%}
+.slides li{ background-size:cover;}
+.about3 {margin-top:-20px}
+.about3 .blank { height:0px;margin-top:-40px}
+}
+
+@media (max-width:1400px) {
+.flexslider,.slides li,.slides li a{height:350px;}
+.wrap {max-width:100%;padding:0 3%}
+.index-sildebox .bd li,.index-sildebox .hd ul li .li{ background-size:cover;}
+.index-sildebox,.index-sildebox .bd li { height:500px}
+.index-sildebox .hd{bottom:-136px;}
+.index-sildebox .hd ul{height:110px; padding:10px 0;}
+.index-sildebox .hd ul li{width:103px;height:100px; }
+
+.about {padding-top:100px}
+.about .subject {margin-top:70px;font-size:40px; line-height:60px}
+.about li {width:16%;margin-right:5%;}
+.about li.l5 {margin-right:0}
+.about .ul1 li .pic div p {margin:-40px 0 0 -40px;width:80px; height:80px; background-size:100%;}
+.about .ul1 li.l2 .pic div p,
+.about .ul1 li.l3 .pic div p,
+.about .ul1 li.l4 .pic div p,
+.about .ul1 li.l5 .pic div p { background-size:100%;}
+.about .ul1 li:hover .pic div p { background-position:0 -80px;}
+.about .ul1 li .title { font-size:28px; line-height:30px; height:30px;}
+.about .ul3 {margin-top:80px}
+.about .ul3 .title {font-size:60px; height:60px; line-height:60px; }
+.about .ul3 .cons {font-size:18px;height:20px; line-height:20px;}
+
+.msubejct {font-size:40px;margin:50px 0 20px 0;}
+.indnews li .title {margin:20px 0 0 0}
+.indnews li .addtime {margin-bottom:0}
+.custom li{width:17.6%;margin:3% 3% 0 0}
+.custom li.no {margin-right:0}
+.foot .backtotop {right:3%}
+.foot .coper {right:3%}
+.page_wrap {padding:30px 0 0px 0;}
+.workmenu {float:none; width:100%;margin:0 0 0 0px}
+.workmenua {margin-left:0;}
+.workmenuhy {margin-bottom:20px}
+.showcons { font-size:14px; line-height:25px}
+.showcons a {font-size:14px}
+
+.team {margin-top:40px}
+.team .msubejct {margin-top:40px}
+.team li {width:18.4%;margin:10px 2% 20px 0;}
+.team li .title {margin:10px 0 0 0}
+.joinusa { height:45px; line-height:45px;width:200px;font-size:20px;margin:30px auto 80px auto}
+.page_wrap_news {margin-top:0px}
+.newsmenu {margin-bottom:10px}
+.news li {margin-bottom:20px}
+.newsright li .title {margin:10px 0 0 0}
+.newsright li .addtime {margin-bottom:15px}
+.contacttel { font-size:40px;line-height:50px;margin:80px 0;}
+.indmoreworks {margin:50px auto}
+
+.foot {padding-top:40px}
+.foot .threeqq {height:20px; line-height:20px;font-size:17px;padding-top:50px;}
+.foot .threeqq a {font-size:17px}
+.foot .threeqq span.f1 {width:auto;}
+.foot .threeqq span.f2 {width:auto; text-align:left;margin:0 3%}
+.foot .threeqq span.f3 {float:left;width:auto; text-align:left;}
+.foot .threeqq i {height:20px; line-height:20px;margin-right:10px}
+.foot .threeqq i.email { width:20px; background-size:100%;}
+.foot .threeqq i.qq {width:18px; background-size:100%;}
+.foot .threeqq i.tel {width:19px;background-size:100%;}
+.footbanner {margin-top:60px}
+.foot li {margin-right:0%;width:16.6666%}
+.foot li.last {width:16.6666%;float:left}
+
+.about3 {margin-top:-80px}
+.about3 .msubejct {margin-bottom:30px}
+.about3 .blank { height:20px;margin-top:0px}
+}
+@media (max-width:1200px) {
+.flexslider {margin-bottom:20px}
+.flex-control-nav{bottom:5px;}
+.flex-control-nav li{width:5px;height:5px;margin:0 5px;}
+.flex-control-nav a{width:5px;height:5px; }
+.foot .coper { height:35px; line-height:35px;width:100px}
+.foot .coper a {font-size:16px;}
+.contactleft {width:380px}
+.contactright {width:520px;}
+.message input[type="text"] {width:83%}
+.message #mcons {width:80.8%}
+.liuyan .message input[type="text"] {width:83%}
+.liuyan .message #mcons {width:83%}
+.commonmore .joinusa {padding:0 20px;}
+
+.workpic { padding:0px 0 30px 0}
+.workpicin {padding:10px 0 0px 0}
+.about2 .workpic {padding:0px 0 0px 0}
+.about .ul3 {padding:0 0 0px 0}
+.teamtotal .cons { padding:10px 0 0px 0}
+.team ul {padding:0 0 20px 0}
+.teamtitle2 {font-size:13px;margin:-15px 0 30px 0}
+
+.showbottomcase .subject {font-size:20px;padding:35px 0 10px 0;}
+.showbottomcase .indcase {margin-top:10px}
+.showbottomcase .indcase li {margin-right:1%;width:24.25%}
+.showbottomcase .indcase li.f4 {margin-right:0}
+.showbottomcase .indcase .titles {margin-top:10px; height:20px; line-height:20px;}
+.showbottomcase .indcase .titles a {font-size:14px;}
+
+.indmenu { height:30px; line-height:30px;font-size:12px;}
+.indmenu ul li a {margin-right:10px;font-size:12px;}
+
+.navmenu ul li a,.navmenu ul li i{font-size:16px;}
+.navmenu .sercate {margin-top:38px;}
+.navmenu .sercate a {font-size:14px;margin-left:15px}
+.telqq {margin-top:30px}
+.telqq p {font-size:14px;}
+.telqq p span { margin-right:5px;margin-top:5px}
+.telqq a {margin-left:10px}
+.telqq img { height:20px;}
+
+}
+
+@media (max-width:1024px) {
+.flexslider,.slides li,.slides li a{height:250px;}
+.about .subject,.about .ul1 li .title,.about .ul3 .title,.about .ul3 .cons,.msubejct,.indnews li .title a,.indnews li .addtime,.contact li .title,.contact li .title2,.contacttel,.contactleft .cons {font-family:'';}
+html{line-height:22px;font-size:13px;}
+.navmenu,.particulars-nav-fixed.actives .navmenu { height:50px; overflow:visible}
+.mobmenu { display:block}
+.navmenu .logo {height:30px;margin-top:8px}
+.navmenu .logo h1 img { height:25px;}
+.navmenu .logo h2 img { height:20px;}
+.navmenu .logo h2 { margin:4px 0 0 6px}
+.mobopen { display:block; background:url(../images/mobmenu.png) no-repeat;width:23px; height:18px; position:absolute; z-index:1;right:3%;top:16px}
+.mobclose { background:url(../images/close.png) no-repeat;width:30px; height:30px; background-size:100%; position:absolute; z-index:99999;right:20px;top:20px; display:block;display:none;}
+.navmenu ul { position:fixed; z-index:9999; background:rgba(0,0,0,0.9);  height:auto;margin:0; text-align:center;width:100%;left:0;padding:40px 0; height:1000px; display:none;}
+.navmenu ul li { display:block;margin:45px 0;}
+.navmenu ul li a {margin:0;padding:0;color:#fff;font-size:40px; line-height:40px; font-weight:normal}
+.navmenu ul li a:hover,.navmenu ul li.check a{color:#fff}
+.navmenu ul li i {}
+.navmenu ul li:hover i{ font-size:40px; line-height:40px}
+.telqq,.navmenu .sercate { display:none;}
+
+.main{margin-top:50px;}
+.index-sildebox{margin-top:25px;}
+
+.index-sildebox,.index-sildebox .bd li { height:400px}
+
+.about {padding-top:70px}
+.about .subject {margin-top:70px;font-size:20px; line-height:20px; height:30px;margin-bottom:30px}
+.about .ul1 li .pic div p {margin:-30px 0 0 -30px;width:60px; height:60px;}
+.about .ul1 li:hover .pic div p { background-position:0 -60px;}
+.about .ul1 li .title { font-size:18px; height:20px; line-height:20px;margin:20px 0 10px 0; font-weight:normal}
+.about .ul3 {margin-top:80px;}
+.about .ul3 .title {font-size:60px; height:60px; line-height:60px; }
+.about .ul3 .cons {font-size:18px;height:20px; line-height:20px;}
+.about .ul2 {margin-top:20px}
+.about .ul3 {margin-top:30px; }
+.about .ul3 .title {font-size:30px;height:30px; line-height:30px;}
+.about .ul3 .cons {font-size:13px;height:20px; font-weight:normal; line-height:20px;margin-top:10px}
+
+.indcase {margin-top:30px}
+.mar0 {margin-top:0}
+.indcase li .bg{line-height:25px;font-size:16px;}
+.indcase li .cons .hy {font-size:16px;}
+.indcase li .cons .service {font-size:12px; line-height:20px;margin-top:2px}
+
+.msubejct {font-size:20px;margin:10px 0 0px 0;}
+.indnews li .title {margin:15px 0 -3px 0}
+.indnews li .title a {font-size:13px;font-weight:normal}
+.indnews li .addtime {font-size:13px;font-weight:normal;}
+.foot {padding:20px 0;margin-top:30px}
+.foot dt {font-size:16px;margin-bottom:10px}
+.foot dd {font-size:12px}
+.foot dt span {font-size:12px}
+.footer { padding:20px 0;}
+.page_wrap {padding:20px 0 0px 0;}
+.workmenua {margin-top:20px;}
+.showcons .titles {width:40%;}
+.showcons p {font-size:20px; line-height:30px;margin-bottom:10px}
+.showcons .cons {width:50%;}
+.mar-top {margin-top:10px}
+
+.team {margin-top:30px}
+.team .msubejct {margin-top:10px}
+.joinusa { height:35px; line-height:35px;width:150px;font-size:18px;margin:20px auto 50px auto}
+.page_wrap_news {margin-top:-10px}
+.newsmenu {margin-top:10px}
+.news li {margin-bottom:15px}
+.newsleft .title {font-size:16px; line-height:30px;}
+.newsleft .addtime {font-size:14px;margin:0px 0 20px 0}
+.newsleft {width:64%;margin-top:10px}
+.newsright {width:33%;margin-top:15px}
+.newsright li .title {margin:8px 0 0 0}
+.footer .beian a p {bottom:52px;}
+
+.contact li {margin-right:1%;width:24.25%;}
+.contact li.l4 {margin-right:0}
+.contact li .title {font-size:18px;line-height:20px;margin-top:10px}
+.contact li .title span {font-size:12px}
+.contact li .title2 {font-size:14px;font-weight:normal;margin:0px 0 0 0}
+.contact li .cons {margin-top:10px;padding-top:10px;font-size:12px; line-height:22px}
+.contacttel {font-size:25px;line-height:35px;margin:50px 0;}
+
+.contactleft .list i {margin-right:5px; }
+.contactleft .list i.email {background-size:45%}
+.contactleft .list i.qq { background-size:45%}
+.contactleft .list i.www {background-size:50%}
+.contactleft .list i.join { background-size:55%}
+.contactleft .list {font-size:16px;margin:5px 0}
+.contactleft .list a {font-size:16px}
+.contactleft .listjoin {margin-top:50px}
+.contactleft .cons {margin:5px 0 0 40px;font-weight:normal;font-size:14px}
+.contactleft .cons .job {height:40px; line-height:40px; width:200px;margin:20px 0 0 0; }
+.contactleft {width:250px}
+.contactright {width:320px;}
+.message input[type="text"] {width:72%;margin:9px 0}
+.message #mcons {width:68.5%;height:125px;margin-top:9px}
+
+.jobtitle {font-size:20px; line-height:30px;padding:20px 0 30px 0}
+.jobleft {width:50%}
+.jobleft li {margin-bottom:30px;}
+.jobleft .title {font-size:16px;margin:0 0 10px 0;}
+.jobleft .cons {font-size:13px; line-height:22px;}
+.jobright {width:44%;}
+
+.cooperation .jobtitle  {padding-bottom:20px}
+.cooperation .picright,.cooperation .picleft {width:50%}
+
+.foot .backtotop a{font-size:14px}
+.indmoreworks {margin:30px auto}
+.workclassname p {border-width:1px;height:30px; line-height:30px;font-size:16px;margin:4% auto;padding:0 3%}
+
+.foot .threeqq {font-size:14px;padding-top:30px;}
+.foot .threeqq a {font-size:14px}
+.foot .threeqq i.email { width:15px; }
+.foot .threeqq i.qq {width:14px;}
+.foot .threeqq i.tel {width:14px;}
+.footbanner {margin-top:30px}
+.foot ul{margin-top:30px}
+.foot li h1,.foot li h1 a {font-size:16px;margin-bottom:10px}
+
+.promenu {margin-bottom:5px}
+.promenu .subject {font-size:18px; line-height:18px}
+.promenu a,.promenu span {font-size:13px; height:23px; line-height:22px; padding:0 5px;margin:2px 5px 2px 0}
+.promenu p {margin-left:-5px;padding:5px 0}
+.product {padding:0 0 10px 0;margin-top:-10px}
+.product li {width:49%;margin-right:2%;margin-top:2%}
+.product li .cons {font-size:12px;padding:10px 0}
+.product li .cons .title { height:20px; line-height:20px;margin:5px 0;}
+.product li .cons .title a {font-size:16px;}
+
+.msubejctpro2 {padding:0px 0 0 0;margin-top:30px}
+.promenu2 a {margin-left:6px;margin-right:6px}
+
+.about3 {margin-top:-30px}
+.about3 .msubejct {margin-bottom:10px}
+.about3 .blank { height:0px;}
+.commonmoreindex {padding:40px 0 20px 0}
+.commonmoreindex2 {padding:40px 0 20px 0}
+.index2 {padding:0px 0 20px 0}
+.index3 {padding:0px 0 20px 0}
+}
+
+@media (max-width:900px) {
+.foot { text-align:center;padding-top:1px}
+.foot dl {margin-top:20px}
+.footer .copy {float:none; text-align:center}
+.footer .beian {float:none; text-align:center}
+.footer .beian 
+.footer .beian a { display:block;margin:0 auto}
+.footer .beian a.f1,.footer .beian a.f2 { display:inline-block;margin:10px 5px 0 5px}
+.footer .beian a.wx { height:150px;width:100%; background:none;margin:10px 0}
+.footer .beian a p { display:block; position:relative;bottom:auto;left:auto;margin:0 auto}
+.foot .backtotop{ display:none;}
+
+
+}
+
+@media (max-width:768px) {
+.flexslider,.slides li,.slides li a{height:200px;}
+.about .subject {margin-top:50px}
+.index-sildebox .hd{bottom:-76px;}
+.index-sildebox .hd ul{height:58px; padding:10px 0;}
+.index-sildebox .hd ul li{width:60px;height:58px; }
+.index-sildebox,.index-sildebox .bd li { height:300px}
+
+.indcase li {width:50%;}
+.indcase li .bg{line-height:20px;font-size:14px;}
+.indcase li .cons .hy {font-size:14px;}
+.indcase li .cons .service {line-height:20px;}
+.newsleft {width:100%;float:none;margin-top:0; clear:none;padding-top:10px}
+.newsleft .addtime {margin:0 0 20px 0}
+.newsright { display:none;float:none;}
+
+.jobleft {width:100%}
+.jobtitle {font-size:16px;padding:10px 0 20px 0}
+.jobleft li {margin-bottom:30px;}
+.jobleft .title {font-size:14px;margin:0 0 10px 0;}
+.jobright {width:100%;margin-top:-10px}
+.fixright { position:fixed; z-index:9999;right:10px;bottom:8px;background-color: orange;padding:5px 15px;}
+.fixright a { display:block;margin:5px 0;}
+.fixright a font {font-size: 10px;color: white}
+
+
+.foot .threeqq {text-align:center; height:auto;}
+.foot .threeqq span {float:none;}
+.foot .threeqq span.f1 {width:100%}
+.foot .threeqq span.f2 {float:none;width:100%; text-align:center;margin:10px 0}
+.foot .threeqq span.f3 {float:none;width:100%; text-align:center;}
+}
+
+@media (max-width:640px) {
+.flexslider,.slides li,.slides li a{height:180px;}
+.about .subject {font-size:18px;}
+.about li {float:none;width:100%;margin-right:0%;}
+.about li.l5 {margin-right:0}
+.about .ul1 {margin-top:0px}
+.about .ul1 li {width:100%;margin:0 auto 30px auto; text-align:center}
+.about .ul1 li .pic {width:100px;margin:0 auto}
+.about .ul1 li .pic div p { margin:-30px 0 0 -30px;width:60px; height:60px;}
+.about .ul1 li:hover .pic div p { background-position:0 -60px;}
+.about .ul2 { display:none;}
+.about .ul2 li {margin-bottom:20px}
+.about .ul3 { display:none;}
+.about .ul3 .title {font-size:30px; height:30px; line-height:30px}
+.about .ul3 li {margin-bottom:30px;}
+.custom {margin-top:-6%}
+.custom li{width:46%;margin:10% 2% 0 2%}
+.custom li.no {margin-right:2%}
+.pad1per {padding:0 1%;width:98%;}
+.workmenu span { display:block}
+.workmenu i { display:none;}
+.workmenu p { display:inline-block;width:50%}
+.showcons {padding:5%}
+.showcons { font-size:13px; line-height:22px}
+.showcons a {font-size:13px}
+.showcons .titles {float:none;width:100%;margin:0}
+.showcons .cons {float:none;width:100%;margin:5% 3% 0 0}
+
+.team li {width:46%;margin:10px 2% 5px 2%;}
+.team li.no {margin-right:2%}
+.joinusa { margin:30px auto 40px auto}
+.newsmenu p { display:inline-block;width:auto}
+.newsmenu p i { display:inline-block}
+.indnews li {float:none;width:100%;}
+.indnews li .title { margin:10px 0 0 0;}
+
+.contact li {margin-right:0;float:none;width:100%;margin-bottom:20px}
+.contact li.l4 {margin-right:0}
+.contact li .title {margin-top:15px}
+.contact li .cons {width:100%}
+.contacttel { font-weight:bold;font-size:16px; line-height:22px;margin:20px 0}
+.contactleft {float:none;width:100%}
+.contactright {float:none;width:100%; text-align:left;margin-top:30px}
+.contactleft .listjoin {margin-top:10px;}
+.contactleft .cons {font-size:13px; line-height:20px;}
+.message p { width:65px;font-size:13px;}
+.message input[type="text"] {width:75%;}
+.message #mcons {width:71.5%;}
+.message #mbtn {margin:20px 0 0 65px;}
+.liuyan {padding:1px 0 30px 0}
+.liuyan .message #mbtn {margin:20px 0 10px 65px;}
+.liuyan .st .cons {width:85%}
+.liuyan .st { margin:0 0 0 65px;}
+.indcase li {width:100%;}
+.liuyan .message input[type="text"] {width:81%}
+.liuyan .message #mcons {width:81%}
+.foot .coper {bottom:1.5%;height:25px; line-height:22px;width:70px;}
+.foot .coper a {font-size:13px}
+
+.foot dl {float:none;margin-right:0%;width:100%}
+.foot dl.l4 {margin-right:0}
+.foot dt {margin-bottom:5px}
+.foot dt .pic { margin-bottom:10px}
+
+.showbottomcase .subject {padding:40px 0 10px 0;}
+.showbottomcase .indcase {margin-top:5px}
+.showbottomcase .indcase li {margin-right:0;width:100%;margin-top:10px}
+.showbottomcase .indcase li.f4 {margin-right:0}
+.foot ul,.foot dt .pic,.footbanner { display:none;}
+
+.product li {float:none;width:100%;margin-right:0%;margin-top:20px}
+.about3 .msubejct {font-size:18px; line-height:25px;margin:30px 0}
+.cooperation .picright,.cooperation .picleft {margin:0 0 20px 0; width:100%}
+.indmenu { height:0; overflow:hidden}
+}
+
+@media (max-width:480px) {
+.flexslider,.slides li,.slides li a{height:120px;}
+.index-sildebox .hd{bottom:-65px;}
+.index-sildebox .hd ul{height:51px; padding:10px 0;}
+.index-sildebox .hd ul li{width:53px;height:51px; }
+.index-sildebox,.index-sildebox .bd li { height:200px}
+.liuyan .message input[type="text"] {width:76%}
+.liuyan .message #mcons {width:76%}
+.liuyan .st { margin:0 0 0 0;}
+
+}

@@ -1,0 +1,55 @@
+<style type="text/css">
+    #side-menu{
+        /*margin-top: 0px;*/
+        margin-right: 5px;
+        margin-right: 5px;
+    }
+    #side-menu li{
+        background-color: #00b7ee;
+    }
+    #side-menu li a{
+        background-color: #fff;
+    }
+    #side-menu .menu{
+        background: transparent url(#springUrl("/resources/img/icons/menu_icon.png")) no-repeat scroll 0 0;
+        display: inline-block;
+        height: 30px;
+        width: 27px;
+        margin-right: 15px;
+    }
+    #side-menu .home{
+        background-position: 1px 0px;
+    }
+    #side-menu .scan{
+        background-position: -25px 0px;
+    }
+    #side-menu .pickup{
+        background-position: -135px 0px;
+    }
+    #side-menu .post{
+        background-position: -53px 0px;
+    }
+    #side-menu .search{
+        background-position: -107px 0px;
+    }
+    #side-menu .shop{
+        background-position: -162px 0px;
+    }
+    #side-menu .order{
+        background-position: -80px 0px;
+    }
+    #side-menu li a span {
+        display: inline-block;
+        font-size: 18px;
+        margin-top: 4px;
+        position: absolute;
+    }
+
+</style>
+
+<ul class="nav" id="side-menu">
+    <li><a href="${basePath}/client/list"><i class="menu home"></i><span>客户意向</span></a></li>
+    <li><a href="${basePath}/works/list"><i class="menu pickup"></i><span>案例管理</span></a></li>
+    <li><a href="${basePath}/singlepic/list"><i class="menu pickup"></i><span>图片管理</span></a></li>
+    <li><a href="${basePath}/industryinformation/list"><i class="menu pickup"></i><span>资讯管理</span></a></li>
+</ul>

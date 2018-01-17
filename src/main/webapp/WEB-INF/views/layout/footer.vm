@@ -1,0 +1,112 @@
+<!--页面整体底部-->
+<div class="foot">
+    <div class="wrap relative">
+        <dl class="l1">
+            <dt>
+            <div class="pic">
+                <img src="${basePath}/resources/uploadfile/1498198119.jpg" />
+            </div>上海
+            #*<span>（总部）</span>*#
+            </dt>
+            <dd>
+                徐汇区凌云路388号
+                <br />
+                <br />
+            </dd>
+        </dl>
+        <dl class="l2">
+            <dt>
+            <div class="pic">
+                <img src="${basePath}/resources/uploadfile/1498198080.jpg" />
+            </div>北京
+            </dt>
+            <dd>
+                顺义区南法信镇金穗路2号院5号楼9层901室
+                <br />
+            </dd>
+        </dl>
+        #*<dl class="l3">
+            <dt>
+            <div class="pic">
+                <img src="${basePath}/resources/uploadfile/1498198039.jpg" />
+            </div>深圳
+            </dt>
+            <dd>
+                南山区松白路1051号3栋301室
+                <br /> (百旺创意工厂)
+            </dd>
+        </dl>
+        <dl class="l4">
+            <dt>
+            <div class="pic">
+                <img src="${basePath}/resources/uploadfile/1498197999.jpg" />
+            </div>杭州
+            </dt>
+            <dd>
+                江干区艮山西路102号B幢2078室
+                <br /> (杭州创意设计中心)
+            </dd>
+        </dl>*#
+        <div class="threeqq">
+            <span class="f1"><i class="email"></i><a href="mailto:duxize1211@163.com">duxize1211@163.com</a></span>
+            <span class="f2"><i class="qq"></i><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=782801963&amp;site=&amp;menu=yes" target="_blank">782801963</a></span>
+            <span class="f3"><i class="tel"></i>全国统一咨询电话：186-1099-8268</span>
+        </div>
+        <div class="footbanner">
+            <img src="${basePath}/resources/images/logo.png" />
+            <img src="${basePath}/resources/images/logo2.png" />
+        </div>
+        <ul>
+            <li><h1>品牌战略</h1><p>品牌调研<br />品牌定位<br />品牌架构<br />品牌理念<br />品牌口号<br />品牌故事<br />品牌个性<br />品牌文化</p></li>
+            <li><h1>品牌设计</h1><p>LOGO设计<br />标志设计<br />商标设计<br />VI设计<br />画册设计<br />KV海报设计<br />网站设计<br />吉祥物设计<br />UI/UE设计</p></li>
+            <li><h1>包装设计</h1><p>产品包装设计<br />瓶型设计<br />产品外观设计<br />礼盒设计</p></li>
+            <li><h1>新零售空间</h1><p>专卖店设计<br />旗舰店设计<br />店中店设计<br />小型店设计<br />道具设计</p></li>
+            <li><h1>产品创新</h1><p>市场研究<br />产品创新<br />产品开发<br />产品设计<br />产品线规划<br />产品招商<br />爆品打造</p></li>
+            <li class="last"><h1>营销传播</h1><p>年度整合营销<br />线上线下传播<br />微博微信<br />社会化营销<br />热点事件营销<br />广告策划<br />公关软文</p></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="wrap">
+        <div class="copy">
+            <a href="${basePath}/portals/home">首页</a>
+            <i>|</i>
+            <a href="${basePath}/portals/work">案例</a>
+            <i>|</i>
+            <a href="${basePath}/portals/work">资讯</a>
+            <i>|</i>
+            <a href="${basePath}/portals/career">招聘</a>
+            <i>|</i>
+            <a href="${basePath}/portals/about">关于</a>
+            <div class="cons">
+                Copyright &nbsp;Beijing &nbsp;Dianchuang Creativer Planning Co. Ltd &nbsp;All right &nbsp;reserved.　
+            </div>
+            #*<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1234859'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s94.cnzz.com/stat.php%3Fid%3D1234859%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>*#
+        </div>
+    </div>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2a90918eed54025dd427f5ec645f997c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2a90918eed54025dd427f5ec645f997c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    #*<div class="beian">
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010702001584" target="_blank" class="f1"><img src="${basePath}/resources/images/f1.jpg" /></a>
+        <a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20141010150115713" target="_blank" class="f2"><img src="${basePath}/resources/images/f2.jpg" /></a>
+    </div>*#
+    <div class="clear"></div>
+    <div class="fixright"><a href="contact"><font>需求留言</font></a></div>
+</div>

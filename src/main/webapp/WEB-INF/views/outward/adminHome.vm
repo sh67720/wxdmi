@@ -1,0 +1,57 @@
+#set($page_title="登录")
+#set($layout="/layout/layoutbackend.vm")
+<style type="text/css">
+    #page-wrapper{
+    }
+    .homepage .tiles{
+        font-size: 4em;
+    }
+    .homepage .tiles h2{
+        margin: 0.2em auto;
+    }
+    .homepage .tiles h2 a{
+        color: #f8612a;
+    }
+    .homepage .tiles h2 a:hover{
+        color: #f8612a;
+        text-decoration: none;
+    }
+    .homepage .tiles p{
+        font-size: 0.35em;
+        color: #363634;
+    }
+    .homepage .titles p{
+        font-size: 0.5em;
+    }
+    .homepage .operation{
+        cursor: pointer;
+    }
+    .homepage .operation p{
+        color: #f8612a;
+    }
+    .operation i{
+        background: transparent url(#springUrl("/resources/img/icons/home_icon.png")) no-repeat scroll -157px 0;
+        display: inline-block;
+        height: 160px;
+        width: 160px;
+    }
+  .operation i.middel{
+      background-position: -315px 0px;
+  }
+  .operation i.right{
+      background-position: 0px 0px;
+  }
+</style>
+<section class="homepage">
+    <div class="container" style="width: 100%;">
+        <div class="row">
+            <div class="tiles titles clearfix">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="heading-text">
+                        <p>欢迎使用后台管理系统！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

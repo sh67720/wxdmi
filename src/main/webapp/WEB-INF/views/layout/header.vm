@@ -1,0 +1,45 @@
+<!--页面整体头部-->
+<div id="navFixed" class="particulars-nav-fixed">
+    <div class="navmenu">
+        <div class="wrap">
+            <div class="logo">
+                #*<h1><a href="#"><img src="${basePath}/resources/images/logo.png" alt="点创品牌LOGO" /></a></h1>
+                <h2><a href="#"><img src="${basePath}/resources/images/logo2.png" /></a></h2>*#
+                    <h1><a href="#"><img src="${basePath}/resources/images/logo3.jpg" alt="点创品牌LOGO" /></a></h1>
+            </div>
+            <div class="mobmenu">
+                <a href="javascript:;" class="mobopen"></a>
+                <a href="javascript:;" class="mobclose"></a>
+            </div>
+            <div class="sercate">
+                #*<a href="work">品牌全案</a>
+                <a href="work">LOGO（VI设计）</a>
+                <a href="work">产品创新开发</a>
+                <a href="work">营销（传播）</a>*#
+                    <a href="#"><img src="${basePath}/resources/images/sercate.jpg" alt="" /></a>
+            </div>
+            <div class="telqq">
+                <a href="#"><img src="${basePath}/resources/images/telqq.jpg" alt="" /></a>
+            </div>
+            <div class="clear"></div>
+            <ul>
+                #*<li class=$!home_class><a href="${basePath}/portals/home"><span>首页</span><i>HOME</i></a></li>
+                <li class=$!works_class><a href="${basePath}/portals/work"><span>点创案例</span><i>WORKS</i></a></li>
+                <li class=$!about_class><a href="${basePath}/portals/about"><span>点创团队</span><i>ABOUT</i></a></li>
+                <li class=$!career_class><a href="${basePath}/portals/career"><span>点创招聘</span><i>CAREER</i></a></li>
+                <li class=$!contact_class><a href="${basePath}/portals/contact"><span>联系点创</span><i>CONTACT</i></a></li>*#
+                <li class=$!home_class><a href="${basePath}/portals/home">首页<i></i></a></li>
+                <li class=$!works_class><a href="${basePath}/portals/work">点创案例<i></i></a></li>
+                <li class=$!about_class><a href="${basePath}/portals/about">点创团队<i></i></a></li>
+                <li class=$!career_class><a href="${basePath}/portals/career">点创招聘<i></i></a></li>
+                <li class=$!contact_class><a href="${basePath}/portals/contact">联系点创<i></i></a></li>
+            </ul>
+            #*<div class="telqq">
+                *##*<p><span></span><img src="${basePath}/resources/images/toptel.jpg" /></p>*##*
+                *##*<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=782801963&amp;site=&amp;menu=yes" target="_blank"><img src="${basePath}/resources/images/topqq.jpg" /></a>*##*
+                    <a href="#"><img src="${basePath}/resources/images/telqq.jpg" alt="" /></a>
+            </div>*#
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
