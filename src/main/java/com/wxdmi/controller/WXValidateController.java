@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class WXValidateController {
 
-    private static final Logger logger = LoggerFactory.getLogger(OutwardController.class);
+    private static final Logger logger = LoggerFactory.getLogger(WXValidateController.class);
 
     @RequestMapping(value = "/validate", method = RequestMethod.GET)
     @ResponseBody
@@ -36,8 +36,10 @@ public class WXValidateController {
                 !TextUtils.isEmpty(nonce)&&
                 !TextUtils.isEmpty(echostr)&&
                 WXCheckUtil.checkSignature(signature, timestamp, nonce)){
+            logger.info("signature:" + "验证成功");
             return echostr;
         }
+        logger.error("signature:" + "验证失败");
         return "验证失败";
     }
 }

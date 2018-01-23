@@ -1,17 +1,22 @@
 package com.wxdmi.controller;
 
+import com.wxdmi.client.common.AccessTokenClient;
 import com.wxdmi.entity.Admin;
 import com.wxdmi.service.AdminService;
 import com.wxdmi.utils.MD5Util;
+import com.wxdmi.utils.cache.CacheUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -26,11 +31,20 @@ public class OutwardController extends BaseController{
 
     @Autowired
     private AdminService adminService;
+    @Autowired
+    private CacheUtil cacheUtil;
+    @Value("${wx.accesstoken}")
+    private String tokenUrl;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @ResponseBody
     public String login(Model model){
-        model.addAttribute("admin", new Admin());
-        return LOGIN_PAGE;
+        AccessTokenClient accessTokenClient = new AccessTokenClient();
+        String st = accessTokenClient.getAccessToken(tokenUrl, cacheUtil);
+
+        /*model.addAttribute("admin", new Admin());
+        return LOGIN_PAGE;*/
+        return "获取到的token为："+st;
     }
 
     @RequestMapping(value = "/adminHome", method = RequestMethod.GET)

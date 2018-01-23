@@ -2,6 +2,7 @@ package com.wxdmi.utils;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -69,6 +70,18 @@ public class CacheUtil {
     }
     public void put(String key, Object value){
         cache.put(key, value);
+    }
+
+    /**
+     * 从一级缓存中读取并放入二级缓存中
+     * @param key
+     * @return
+     */
+    public <T> T getCacheByFromRedis(@NotNull String key, Class<T> cls){
+        Object obj = getCacheByFromRedis(key);
+        if(obj != null)
+            return (T) obj;
+        return null;
     }
 
     public Object getCacheByFromRedis(String key){

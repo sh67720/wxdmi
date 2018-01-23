@@ -20,11 +20,18 @@
     http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <description>gfweb</description>
-    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <description>wxdmi</description>
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="false">
+        <property name="ignoreUnresolvablePlaceholders" value="true"/>
+        <property name="ignoreResourceNotFound" value="true" />
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
         <property name="fileEncoding" value="UTF-8" />
         <property name="locations">
-            <list> <value>classpath*:*.properties</value> </list>
+            <list>
+                <value>classpath*:*.properties</value>
+                <value>classpath*:api.properties</value>
+            </list>
         </property>
     </bean>
 
@@ -63,4 +70,5 @@
         <property name="maxCacheNum" value="200000"/>
     </bean>
     <import resource="classpath*:applicationDBContext.xml"/>
+    <import resource="classpath*:applicationCacheContext.xml" />
 </beans>
