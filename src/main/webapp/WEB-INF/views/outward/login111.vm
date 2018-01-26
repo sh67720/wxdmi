@@ -1,0 +1,75 @@
+#set($page_title="登录")
+#set($layout="/layout/staticLayout.vm")
+
+<link href="#springUrl("/resources/css/home_login.css")" rel="stylesheet" type="text/css">
+
+<div class="login">
+	<div class="top clearfix">
+    	<span class="left"></span>
+        <span class="right">欢迎使用后台管理系统</span>
+    </div>
+    <div class="container">
+    	<div class="login_box">
+        	<div class="login_icon">
+                <form id="loginForm" class="form-horizontal form-signin" action="#springUrl("/outward/login.html")" method="post">
+                        <h3>登录</h3>
+                    #if($error)
+                        <div class="alert alert-danger"> $error  </div>
+                    #end
+                    #if($message)
+                        <div class="alert alert-success"> $message  </div>
+                    #end
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <span class="glyphicon glyphicon-user pst" aria-hidden="true"></span>
+                            #springFormInput("admin.username" 'id="username" class="form-control" placeholder="用户名" autofocus')
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <span class="glyphicon glyphicon-lock pst" aria-hidden="true"></span>
+                            #springFormPasswordInput("admin.password" 'id="password" class="form-control" placeholder="密码"')
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10">
+                            <input type="submit" class="btn btn-lg login_button col-lg-12" value="登 录">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $("#loginForm").bootstrapValidator({
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            submitHandler: function(validator, form, submitButton) {
+                $(form).submit();
+            },
+            fields: {
+                username: {
+                    validators: {
+                        notEmpty: {message: '用户名不能为空'}
+                    }
+                },
+                password: {
+                    validators: {
+                        notEmpty: {message: '密码不能为空'},
+                        regexp: {
+                            regexp: /^(\w|\d|_){6,20}$/i,
+                            message: '密码格式错误'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
