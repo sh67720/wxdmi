@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="redis">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$MAVEN_REPOSITORY$/redis" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>

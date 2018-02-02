@@ -1,0 +1,63 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>$!page_title</title>
+    #set($basePath=${rc.contextPath})
+
+    <link rel="shortcut icon" href="${basePath}/favicon.ico" type="image/x-icon" />
+    <link href="${basePath}/resources/css/main.css" rel="stylesheet" type="text/css">
+    <link href="${basePath}/resources/css/media.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="${basePath}/resources/thirdparty/compatibility/bootstrap-ie6.css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="${basePath}/resources/thirdparty/compatibility/ie.css">
+    <![endif]-->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="${basePath}/resources/thirdparty/compatibility/html5shiv.min.js"></script>
+    <script src="${basePath}/resources/thirdparty/compatibility/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="${basePath}/resources/js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/js/countUp.min.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/js/commontop.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/js/commonfoot.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/js/jquery.SuperSlide.2.1.1.js"></script>
+
+
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="${basePath}/resources/thirdparty/compatibility/bootstrap-ie.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+       /* $(function(){
+            var isIE = !!window.ActiveXObject;
+            var isIE6 = isIE && !window.XMLHttpRequest;
+            if (isIE){
+                if (isIE6){
+                    alert("IE������汾���ͣ��뵽ָ����վȥ������ذ汾");
+                    setTimeout(function(){
+                        window.location.href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie";
+                    }, 5 * 1000);
+                }
+            }
+        });*/
+
+
+        (function ($) {
+            $(document).ready(function() {
+                if ($.isFunction($.bootstrapIE6)) $.bootstrapIE6($(document));
+            });
+        })(jQuery);
+
+        var baseUrl = '${basePath}';
+        var needLoadMenus = undefined;
+    </script>
+</head>

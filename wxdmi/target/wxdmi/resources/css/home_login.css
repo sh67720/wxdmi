@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    box-sizing: content-box;
+}
+html, body, ul, li, h1, h2, h3, h4, h5, h6, p, ol, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: Verdana,"Microsoft YaHei";
+    font-size: 12px;
+    line-height: 1.8;
+}
+a{text-decoration:none;}
+li {
+    list-style: outside none none;
+}
+img {
+    border: 0 none;
+}
+
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom:1;
+    box-sizing: content-box;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.right a{
+    color: #00b7ee;
+}
+.right a{
+    text-decoration: none;
+    color: #00b7ee;
+}
+
+.top{
+    background:#3d3d3d;
+    padding:30px 90px 30px 45px;
+    height:43px;
+}
+.top span{
+    font-size:24px;
+    color:#fff;
+}
+.container{
+    padding: 0px;
+    margin: 0px;
+}
+.page .container{
+    /*background:url(webbg.png) no-repeat center center;*/
+    width:100%;
+    position:relative;
+}
+.page .container .continue{
+    position:absolute;
+    left:45%;
+    top:85%;
+}
+.page .container .mb{
+    position:absolute;
+    left:50%;
+    margin-left:220px;
+    top:0px;
+}
+.page .container .mb p{
+    color:#fff;
+    font-size:26px;
+    text-align:center;
+}
+.page .container .sul{
+    position:absolute;
+    font-size:40px;
+    color:#fff;
+    left:50%;
+    margin-left:-720px;
+    bottom:20px;
+}
+.page .container .sul span{
+    color:#00b7ee;
+}
+
+.page .bottom{
+    width:600px;
+    margin:0 auto 40px;
+}
+.page .bottom p{
+    color:#707070;
+    font-size:14px;
+    margin:10px 0;
+    text-align:center;
+}
+.page .bottom p.img{
+    padding-left:230px;
+    position:relative;
+}
+.page .bottom p.img img{
+    position:absolute;
+    left:5px;
+    top:3px;
+}
+.page .bottom p.img a{
+    display:block;
+    width:350px;
+    height:85px;
+    text-align:center;
+    line-height:85px;
+    color:#fff;
+    font-size:28px;
+}
+.page .bottom p.img a.ios img{
+    left:205px;
+    top:0px;
+}
+
+
+
+
+/*手机端css  start*/
+.tg{width:100%; position:relative; background:#fff;}
+.body_bg{
+    width:100%;
+    position:relative;
+}
+.body_bg p{
+    font-size:28px;
+    color:#fff;
+    text-align:center;
+    padding:20px 0;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-130px;
+}
+.wz p{
+    font-size:16px;
+    color:#424242;
+    text-align:center;
+    padding:5px;
+}
+.down{
+    padding:10px 20px;
+}
+.down a{
+    display:block;
+    margin:0 auto;
+    width:100%;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    background:#00b7ee;
+    font-size:20px;
+    color:#fff;
+}
+/*手机端css end*/
+
+
+
+
+/*pc登录*/
+.login .container{
+    box-sizing: content-box;
+    position:relative;
+    width:100%;
+}
+.login .container .login_box{
+    box-sizing: content-box;
+    background:#fff;
+    box-shadow:0px 0px 5px #333;
+    position:absolute;
+    left:50%;
+    margin-left:150px;
+    top:200px;
+}
+.login .container .login_box .login_icon{
+    padding:40px 60px 40px;
+    width:400px;
+}
+.login .container .login_box .login_icon h3{
+    color:#353535;
+    font-size:20px;
+    text-align:center;
+    margin-bottom:30px;
+}
+.login .container .login_box .login_icon .item{
+    border:1px solid #858585;
+    padding:10px;
+}
+.login .container .login_box .login_icon .item p{
+    padding:1px 0 2px 60px;
+    height:60px;
+}
+
+.login .container .login_box .login_icon .item p input{
+    border:none;
+    height:60px;
+    width:100%;
+    font-size:30px;
+    color:#333;
+}
+.login .container .login_box .login_icon .tip{
+    height:25px;
+}
+.login .container .login_box .login_icon .tip p{
+    float:left;
+    color:#717171;
+    font-size:14px;
+}
+.login .container .login_box .login_icon .tip a{
+    float:right;
+    color:#00b7ee;
+    font-size:14px;
+    text-decoration:underline;
+}
+.login .container .login_box .login_icon .login_button{
+    background:#00b7ee;
+    color:#fff;
+    font-size:20px;
+}
+.login .container .login_box .register{
+    display:block;
+    width:100%;
+    height:80px;
+    text-align:center;
+    line-height:80px;
+    background:#3d3d3d;
+    color:#fff;
+    font-size:20px;
+}
+.login .container .login_box .pst{
+    position:absolute;
+    left:20px;
+    top:12px;
+}
+
+.login .container .login_box input[type="text"],
+.login .container .login_box input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    padding: 7px 9px 7px 22px;
+}
+
+
+
+@media screen and (min-width: 960px) {
+    body{background:#f2f2f2;}
+    .tg{width:640px; margin:0 auto;}
+}

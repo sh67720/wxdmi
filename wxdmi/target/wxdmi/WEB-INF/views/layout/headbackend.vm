@@ -1,0 +1,74 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>$!page_title</title>
+    #set($basePath=${rc.contextPath})
+
+    <link rel="shortcut icon" href="${basePath}/favicon.ico" type="image/x-icon" />
+    <link href="${basePath}/resources/thirdparty/bootstrap-3.3.4/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${basePath}/resources/thirdparty/bootstrap-3.3.4/select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="${basePath}/resources/thirdparty/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="${basePath}/resources/thirdparty/sb-admin-2/css/sb-admin-2.css" rel="stylesheet">
+    <link href="${basePath}/resources/thirdparty/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="${basePath}/resources/thirdparty/normalize.css" rel="stylesheet" type="text/css">
+    <link href="${basePath}/resources/thirdparty/bootstrapvalidator/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css">
+    <link href="${basePath}/resources/css/common.css" rel="stylesheet" type="text/css">
+    <link href="${basePath}/resources/css/backend.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="${basePath}/resources/thirdparty/compatibility/bootstrap-ie6.css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="${basePath}/resources/thirdparty/compatibility/ie.css">
+    <![endif]-->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="${basePath}/resources/thirdparty/compatibility/html5shiv.min.js"></script>
+    <script src="${basePath}/resources/thirdparty/compatibility/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="${basePath}/resources/thirdparty/modernizr-2.6.2.min.js"></script>
+    <script src="${basePath}/resources/thirdparty/jquery-1.11.3.min.js"></script>
+    <script src="${basePath}/resources/thirdparty/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+    <script src="${basePath}/resources/thirdparty/bootstrap-3.3.4/select/js/bootstrap-select.min.js"></script>
+    <script src="${basePath}/resources/thirdparty/metisMenu/metisMenu.min.js"></script>
+    <script src="${basePath}/resources/thirdparty/plugins.js"></script>
+    <script src="${basePath}/resources/thirdparty/bootstrapvalidator/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="${basePath}/resources/thirdparty/compatibility/jquery.placeholder.js"></script>
+    <script src="${basePath}/resources/js/common.js"></script>
+
+
+    <!--[if lte IE 6]>
+        <script type="text/javascript" src="${basePath}/resources/thirdparty/compatibility/bootstrap-ie.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+       /* $(function(){
+            var isIE = !!window.ActiveXObject;
+            var isIE6 = isIE && !window.XMLHttpRequest;
+            if (isIE){
+                if (isIE6){
+                    alert("IE������汾���ͣ��뵽ָ����վȥ������ذ汾");
+                    setTimeout(function(){
+                        window.location.href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie";
+                    }, 5 * 1000);
+                }
+            }
+        });*/
+
+
+        (function ($) {
+            $(document).ready(function() {
+                if ($.isFunction($.bootstrapIE6)) $.bootstrapIE6($(document));
+            });
+        })(jQuery);
+
+        var baseUrl = '${basePath}';
+        var needLoadMenus = undefined;
+    </script>
+</head>
