@@ -1,6 +1,8 @@
 package com.wxdmi.controller;
 
 import com.wxdmi.client.common.AccessTokenClient;
+import com.wxdmi.client.menu.MenuClient;
+import com.wxdmi.client.menu.MenuReq;
 import com.wxdmi.entity.Admin;
 import com.wxdmi.service.AdminService;
 import com.wxdmi.utils.MD5Util;
@@ -19,6 +21,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/outward")
@@ -35,6 +39,8 @@ public class OutwardController extends BaseController{
     private CacheUtil cacheUtil;
     @Value("${wx.accesstoken}")
     private String tokenUrl;
+    @Value("${wx.menu.create}")
+    private String menuCreate;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     @ResponseBody
@@ -42,6 +48,16 @@ public class OutwardController extends BaseController{
         AccessTokenClient accessTokenClient = new AccessTokenClient();
         String st = accessTokenClient.getAccessToken(tokenUrl, cacheUtil);
 
+        MenuReq menuReq = new MenuReq();
+        List<MenuReq.MenuButtonReq> menuButtonReqList = new ArrayList<>();
+        MenuReq.MenuButtonReq menuButtonReq = menuReq.new MenuButtonReq();
+        menuButtonReq.setName("测试1");
+        menuButtonReq.setType("view");
+        menuButtonReq.setUrl("http://www.shdim.cn");
+        menuButtonReqList.add(menuButtonReq);
+        menuReq.setButton(menuButtonReqList);
+        MenuClient menuClient = new MenuClient();
+        menuClient.menuCreate(st, menuCreate, menuReq);
         /*model.addAttribute("admin", new Admin());
         return LOGIN_PAGE;*/
         return "获取到的token为："+st;
