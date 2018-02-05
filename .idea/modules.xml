@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dmi.iml" filepath="$PROJECT_DIR$/dmi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jedis/jedis.iml" filepath="$PROJECT_DIR$/jedis/jedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wxdmi/wxdmi.iml" filepath="$PROJECT_DIR$/wxdmi/wxdmi.iml" />
     </modules>
   </component>
 </project>

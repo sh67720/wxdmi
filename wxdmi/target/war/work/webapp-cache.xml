@@ -216,6 +216,46 @@
           <string>WEB-INF/views/outward/error.vm</string>
           <string>WEB-INF/views/outward/login.vm</string>
           <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/api.properties</string>
+          <string>WEB-INF/classes/applicationCacheContext.xml</string>
+          <string>WEB-INF/classes/applicationContext.xml</string>
+          <string>WEB-INF/classes/applicationDBContext.xml</string>
+          <string>WEB-INF/classes/com/wxdmi/client/common/AccessTokenClient.class</string>
+          <string>WEB-INF/classes/com/wxdmi/constant/CacheConstant.class</string>
+          <string>WEB-INF/classes/com/wxdmi/constant/Constants.class</string>
+          <string>WEB-INF/classes/com/wxdmi/controller/BaseController.class</string>
+          <string>WEB-INF/classes/com/wxdmi/controller/OutwardController.class</string>
+          <string>WEB-INF/classes/com/wxdmi/controller/WXValidateController.class</string>
+          <string>WEB-INF/classes/com/wxdmi/dao/AdminMapper.class</string>
+          <string>WEB-INF/classes/com/wxdmi/dao/mapper/AdminMapper.xml</string>
+          <string>WEB-INF/classes/com/wxdmi/entity/Admin.class</string>
+          <string>WEB-INF/classes/com/wxdmi/entity/client/AccessToken.class</string>
+          <string>WEB-INF/classes/com/wxdmi/http/HttpRequest.class</string>
+          <string>WEB-INF/classes/com/wxdmi/service/AdminService.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/cache/CacheUtil$1.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/cache/CacheUtil$2.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/cache/CacheUtil.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/cache/RedisClusterClient.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/cache/RedisConfig.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/CacheUtil$1.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/CacheUtil.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/CheckMobile.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/io/CloserUtil.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/io/ConnectionConfig.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/io/ConnectionIO.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/MD5Util.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/Page.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/ParamKey$Page.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/ParamKey.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/QueryBuilder.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/Regex.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/UploadFileUtils.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/WXCheckUtil.class</string>
+          <string>WEB-INF/classes/database.properties</string>
+          <string>WEB-INF/classes/datasource.xml</string>
+          <string>WEB-INF/classes/logback.xml</string>
+          <string>WEB-INF/classes/mybatis-config.xml</string>
+          <string>WEB-INF/classes/servlet-context.xml</string>
           <string>WEB-INF/lib/spring-core-4.1.3.RELEASE.jar</string>
           <string>WEB-INF/lib/commons-logging-1.2.jar</string>
           <string>WEB-INF/lib/spring-context-4.1.3.RELEASE.jar</string>
@@ -309,7 +349,7 @@
               <columnNumber>17</columnNumber>
               <source>
                 <modelId>com.wxdmi:dmi:1.0.0-SNAPSHOT</modelId>
-                <location>D:\GitProject\wxdmi\pom.xml</location>
+                <location>D:\GitProject\dmi\pom.xml</location>
               </source>
             </org.apache.maven.model.InputLocation>
           </entry>

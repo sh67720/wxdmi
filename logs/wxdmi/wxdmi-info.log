@@ -1,0 +1,54 @@
+2018-01-31 09:52:37,531 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 09:52:37,580 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 09:52:39,037 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 10:06:30,701 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 10:06:32,636 [PathWatcher@118cbded] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 10:06:32,664 [PathWatcher@118cbded] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 10:06:34,083 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 10:06:37,290 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 10:06:39,576 [PathWatcher@118cbded] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 10:06:39,606 [PathWatcher@118cbded] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 10:06:41,103 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 10:06:45,863 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 10:06:48,222 [PathWatcher@118cbded] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 10:06:48,258 [PathWatcher@118cbded] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 10:06:49,867 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 10:10:05,162 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 10:10:06,582 [PathWatcher@118cbded] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 10:10:06,620 [PathWatcher@118cbded] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 10:10:07,796 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 10:10:43,834 [PathWatcher@118cbded] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 11:46:25,192 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 11:46:25,291 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 11:46:26,550 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:12:34,391 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 12:12:35,724 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:12:35,744 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:12:36,968 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:14:51,575 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 12:14:52,450 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:14:52,469 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:14:53,658 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:15:38,154 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:15:38,209 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:15:39,494 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:16:02,389 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:16:02,483 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:16:03,830 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:28:58,310 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:28:58,407 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:28:59,736 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:30:59,745 [PathWatcher-Thread[D:\GitProject\dmi\wxdmi (+17)]] INFO  com.wxdmi.utils.cache.RedisClusterClient - disconnect redis pool success
+2018-01-31 12:31:07,016 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:31:07,113 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:31:08,383 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:33:15,501 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:33:15,622 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:33:16,901 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 12:44:06,242 [main] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2018-01-31 12:44:06,337 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-01-31 12:44:07,682 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 13:02:01,170 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 13:18:34,536 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 13:38:38,519 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success
+2018-01-31 14:27:15,911 [main] INFO  com.wxdmi.utils.cache.RedisClusterClient - connect redis pool success

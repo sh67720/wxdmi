@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/jdbc
+    http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+    http://www.springframework.org/schema/cache
+    http://www.springframework.org/schema/cache/spring-cache.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <description>CacheModuel</description>
+
+    <context:annotation-config/>
+    <!-- 自动扫描将带有注解的类 纳入spring容器管理 -->
+
+    <!-- 初始化Redis-->
+    <bean id="redisConfig" class="com.wxdmi.utils.cache.RedisConfig" init-method="init">
+        <property name="maxActive" value="${jedis.pool.maxActive}"/>
+        <property name="maxIdle" value="${jedis.pool.maxIdle}"/>
+        <property name="maxWait" value="${jedis.pool.maxWait}" />
+        <property name="testOnBorrow" value="${jedis.pool.testOnBorrow}"/>
+        <property name="testOnReturn" value="${jedis.pool.testOnReturn}"/>
+        <property name="cacheDeadlineTime" value="${jedis.cache_deadline}" />
+        <property name="cacheResoureDeadlintTime" value="${jedis.cache_resource}" />
+        <property name="cacheSessionDeadLineTime" value="${jedis.cache_session_deadline}" />
+        <property name="cacheShortTime" value="${jedis.cache_shorttime}" />
+        <property name="cacheSession" value="${jedis.cache_session}" />
+    </bean>
+    <bean id="redisClusterClient" class="com.wxdmi.utils.cache.RedisClusterClient" init-method="init" destroy-method="disconnect">
+        <property name="redisConfig" ref="redisConfig" />
+        <property name="ipArr" value="${redis.ip}" />
+        <property name="timeout" value="${redis.timeout}"/>
+    </bean>
+
+    <!-- 初始化本地缓存-->
+    <bean id="cacheUtil" class="com.wxdmi.utils.cache.CacheUtil" init-method="initCache">
+        <property name="expireAfterWriteTimes" value="${cache.expireAfterWriteTimes}"/>
+        <property name="refreshExpireTimes" value="${cache.refreshExpireTimes}"/>
+        <property name="maxCacheNum" value="${cache.maxCacheNum}"/>
+        <property name="bGetFromRedis" value="true" />
+        <property name="redisClusterClient" ref="redisClusterClient"/>
+    </bean>
+</beans>

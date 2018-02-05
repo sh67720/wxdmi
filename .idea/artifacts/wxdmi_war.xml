@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="wxdmi:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
+    <output-path>$PROJECT_DIR$/wxdmi/target</output-path>
     <root id="archive" name="wxdmi.war">
       <element id="artifact" artifact-name="wxdmi:war exploded" />
     </root>
