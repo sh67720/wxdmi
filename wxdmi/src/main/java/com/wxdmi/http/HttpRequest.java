@@ -1,5 +1,9 @@
 package com.wxdmi.http;
 
+import com.wxdmi.client.template.TemplateClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,6 +18,7 @@ import java.util.Map;
  */
 public class HttpRequest {
 
+    private static final Logger logger = LoggerFactory.getLogger("HTTP_CLIENT_LOG");
     /**
      * 向指定URL发送GET方法的请求
      * @param url 发送请求的URL
@@ -22,6 +27,7 @@ public class HttpRequest {
     public static String sendGet(String url) {
         String result = "";
         BufferedReader in = null;
+        logger.info("Get_Req("+url+")");
         try {
             URL realUrl = new URL(url);
             // 打开和URL之间的连接
@@ -58,6 +64,7 @@ public class HttpRequest {
                 e2.printStackTrace();
             }
         }
+        logger.info("Get_Resp("+url+")result("+result+")");
         return result;
     }
 
@@ -74,6 +81,7 @@ public class HttpRequest {
         PrintWriter out = null;
         BufferedReader in = null;
         String result = "";
+        logger.info("Post_Req("+url+")param("+param+")");
         try {
             URL realUrl = new URL(url);
             // 打开和URL之间的连接
@@ -117,6 +125,7 @@ public class HttpRequest {
                 ex.printStackTrace();
             }
         }
+        logger.info("Post_Resp("+url+")result("+result+")");
         return result;
     }
 }

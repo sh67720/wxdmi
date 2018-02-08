@@ -225,6 +225,12 @@
           <string>WEB-INF/classes/com/wxdmi/client/menu/MenuReq$MenuButtonReq.class</string>
           <string>WEB-INF/classes/com/wxdmi/client/menu/MenuReq.class</string>
           <string>WEB-INF/classes/com/wxdmi/client/template/TemplateClient.class</string>
+          <string>WEB-INF/classes/com/wxdmi/client/template/TemplateReq$MiniProgram.class</string>
+          <string>WEB-INF/classes/com/wxdmi/client/template/TemplateReq$TemplateData.class</string>
+          <string>WEB-INF/classes/com/wxdmi/client/template/TemplateReq$TemplateDataDetail.class</string>
+          <string>WEB-INF/classes/com/wxdmi/client/template/TemplateReq.class</string>
+          <string>WEB-INF/classes/com/wxdmi/client/template/TemplateResp$TemplateContent.class</string>
+          <string>WEB-INF/classes/com/wxdmi/client/template/TemplateResp.class</string>
           <string>WEB-INF/classes/com/wxdmi/constant/CacheConstant.class</string>
           <string>WEB-INF/classes/com/wxdmi/constant/Constants.class</string>
           <string>WEB-INF/classes/com/wxdmi/controller/BaseController.class</string>
@@ -234,9 +240,13 @@
           <string>WEB-INF/classes/com/wxdmi/dao/AdminMapper.class</string>
           <string>WEB-INF/classes/com/wxdmi/dao/mapper/AdminMapper.xml</string>
           <string>WEB-INF/classes/com/wxdmi/entity/Admin.class</string>
+          <string>WEB-INF/classes/com/wxdmi/entity/BaseEntity.class</string>
           <string>WEB-INF/classes/com/wxdmi/entity/client/AccessToken.class</string>
+          <string>WEB-INF/classes/com/wxdmi/enums/EventType.class</string>
           <string>WEB-INF/classes/com/wxdmi/enums/MessageType.class</string>
           <string>WEB-INF/classes/com/wxdmi/http/HttpRequest.class</string>
+          <string>WEB-INF/classes/com/wxdmi/http/wxhttp/WXResultBean.class</string>
+          <string>WEB-INF/classes/com/wxdmi/http/wxhttp/WXResultHandler.class</string>
           <string>WEB-INF/classes/com/wxdmi/service/AdminService.class</string>
           <string>WEB-INF/classes/com/wxdmi/utils/BuildXmlUtils.class</string>
           <string>WEB-INF/classes/com/wxdmi/utils/cache/CacheUtil$1.class</string>
@@ -247,6 +257,11 @@
           <string>WEB-INF/classes/com/wxdmi/utils/CacheUtil$1.class</string>
           <string>WEB-INF/classes/com/wxdmi/utils/CacheUtil.class</string>
           <string>WEB-INF/classes/com/wxdmi/utils/CheckMobile.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/DateUtil.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/GsonUtil$1.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/GsonUtil$2.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/GsonUtil$3.class</string>
+          <string>WEB-INF/classes/com/wxdmi/utils/GsonUtil.class</string>
           <string>WEB-INF/classes/com/wxdmi/utils/io/CloserUtil.class</string>
           <string>WEB-INF/classes/com/wxdmi/utils/io/ConnectionConfig.class</string>
           <string>WEB-INF/classes/com/wxdmi/utils/io/ConnectionIO.class</string>

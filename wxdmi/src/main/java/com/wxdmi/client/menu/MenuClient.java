@@ -1,35 +1,40 @@
 package com.wxdmi.client.menu;
 
 import com.alibaba.fastjson.JSONObject;
-import com.google.gson.Gson;
-import com.wxdmi.constant.CacheConstant;
+import com.wxdmi.client.common.AccessTokenClient;
 import com.wxdmi.http.HttpRequest;
+import com.wxdmi.utils.GsonUtil;
+import com.wxdmi.utils.cache.CacheUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by user on 2018/2/5.
  */
+@Service
 public class MenuClient {
 
     private static final Logger logger = LoggerFactory.getLogger(MenuClient.class);
+    @Autowired
+    private AccessTokenClient accessTokenClient;
+    @Value("${wx.menu.create}")
+    private String menuCreate;
+    @Value("${wx.menu.get}")
+    private String menuGet;
+    @Value("${wx.menu.delete}")
+    private String menuDelete;
 
     //创建菜单
-    public int menuCreate(String token, String url, MenuReq req){
+    public int menuCreate(MenuReq req){
         try {
-            String requestUrl = url.replace("ACCESS_TOKEN", token);
+            String requestUrl = menuCreate.replace("ACCESS_TOKEN", accessTokenClient.getAccessToken());
 
-            Gson gson = new Gson();
-            String param = gson.toJson(req);
-            logger.info("menu_create_req/" + param + ".");
-            JSONObject jsonObject = JSONObject.parseObject(HttpRequest.sendPost(requestUrl, param));
+            JSONObject jsonObject = JSONObject.parseObject(HttpRequest.sendPost(requestUrl, GsonUtil.GsonString(req)));
             int errcode = jsonObject.getInteger("errcode");
             String errmsg = jsonObject.getString("errmsg");
-            if(errcode == 0){
-                logger.info("menu_create_success/"+errcode+ "/" + errmsg + ".");
-            }else{
-                logger.info("menu_create_fail/"+errcode+ "/" + errmsg + ".");
-            }
             return errcode;
         }catch (Exception e){
             logger.error("menu_create_exception/", e.getCause() + ".");
@@ -38,15 +43,13 @@ public class MenuClient {
     }
 
     //查询菜单
-    public String menuGet(String token, String url){
+    public String menuGet(){
         try {
-            String requestUrl = url.replace("ACCESS_TOKEN", token);
+            String requestUrl = menuGet.replace("ACCESS_TOKEN", accessTokenClient.getAccessToken());
 
             JSONObject jsonObject = JSONObject.parseObject(HttpRequest.sendGet(requestUrl));
             int errcode = jsonObject.getInteger("errcode");
             String errmsg = jsonObject.getString("errmsg");
-            if(errcode == 0) logger.info("menu_get_success/"+errcode+ "/" + errmsg + ".");
-            else logger.info("menu_get_fail/"+errcode+ "/" + errmsg + ".");
         }catch (Exception e){
             logger.error("menu_get_exception/", e.getCause() + ".");
         }
@@ -54,18 +57,13 @@ public class MenuClient {
     }
 
     //删除菜单
-    public int menuDelete(String token, String url){
+    public int menuDelete(){
         try {
-            String requestUrl = url.replace("ACCESS_TOKEN", token);
+            String requestUrl = menuDelete.replace("ACCESS_TOKEN", accessTokenClient.getAccessToken());
 
             JSONObject jsonObject = JSONObject.parseObject(HttpRequest.sendGet(requestUrl));
             int errcode = jsonObject.getInteger("errcode");
             String errmsg = jsonObject.getString("errmsg");
-            if(errcode == 0) {
-                logger.info("menu_delete_success/" + errcode + "/" + errmsg + ".");
-            }else{
-                logger.info("menu_delete_fail/"+errcode+ "/" + errmsg + ".");
-            }
             return errcode;
         }catch (Exception e){
             logger.error("menu_delete_exception/", e.getCause() + ".");

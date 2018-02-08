@@ -70,6 +70,28 @@
         </filter>
     </appender>
 
+    <!-- http请求和返回内容日志 -->
+    <appender name="HTTP_CLIENT_LOG-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Encoding>UTF-8</Encoding>
+        <file>${rootLog}/${project_name}/httpconnection.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>
+                ${rootLog}/${project_name}/httpconnection.%d{yyyy-MM-dd}.log.zip
+            </fileNamePattern>
+            <maxHistory>3</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>
+                {"time": "%date", %msg}%n
+            </pattern>
+        </encoder>
+    </appender>
+
     <logger name="org.springframework" level="ERROR"/>
     <logger name="ch.qos.logback" level="ERROR"/>
 
@@ -78,6 +100,10 @@
         <appender-ref ref="FILEINFO"/>
         <appender-ref ref="FILEERROR"/>
         <appender-ref ref="FILEDEBUG"/>
+        <appender-ref ref="FILEDEBUG"/>
     </root>
+    <logger name="HTTP_CLIENT_LOG" level="${log_level}" additivity="false">
+        <appender-ref ref="HTTP_CLIENT_LOG-FILE" />
+    </logger>
 </configuration>
 

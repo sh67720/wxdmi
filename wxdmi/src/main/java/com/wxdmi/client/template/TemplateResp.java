@@ -19,21 +19,12 @@ public class TemplateResp {
 
     public class TemplateContent{
 
-        private String access_token;
         private String template_id;
         private String title;
         private String primary_industry;
         private String deputy_industry;
         private String content;
         private String example;
-
-        public String getAccess_token() {
-            return access_token;
-        }
-
-        public void setAccess_token(String access_token) {
-            this.access_token = access_token;
-        }
 
         public String getTemplate_id() {
             return template_id;

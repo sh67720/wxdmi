@@ -1,9 +1,12 @@
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\io\ConnectionIO.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\client\menu\MenuClient.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\GsonUtil.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\CheckMobile.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\client\template\TemplateReq.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\io\ConnectionConfig.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\entity\client\AccessToken.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\dao\AdminMapper.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\entity\BaseEntity.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\cache\RedisConfig.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\controller\WXInitController.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\BuildXmlUtils.java
@@ -17,6 +20,8 @@ D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\Page.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\enums\MessageType.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\ParseXmlUtils.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\http\HttpRequest.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\enums\EventType.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\http\wxhttp\WXResultBean.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\ParamKey.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\client\common\AccessTokenClient.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\io\CloserUtil.java
@@ -25,9 +30,12 @@ D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\Regex.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\CacheUtil.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\controller\OutwardController.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\service\AdminService.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\DateUtil.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\controller\BaseController.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\WXCheckUtil.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\client\template\TemplateResp.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\utils\QueryBuilder.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\client\menu\MenuReq.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\constant\CacheConstant.java
+D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\http\wxhttp\WXResultHandler.java
 D:\GitProject\dmi\wxdmi\src\main\java\com\wxdmi\entity\Admin.java

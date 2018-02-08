@@ -36,30 +36,12 @@ public class OutwardController extends BaseController{
     @Autowired
     private AdminService adminService;
     @Autowired
-    private CacheUtil cacheUtil;
-    @Value("${wx.accesstoken}")
-    private String tokenUrl;
-    @Value("${wx.menu.create}")
-    private String menuCreate;
+    private AccessTokenClient accessTokenClient;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     @ResponseBody
     public String login(Model model){
-        AccessTokenClient accessTokenClient = new AccessTokenClient();
-        String st = accessTokenClient.getAccessToken(tokenUrl, cacheUtil);
-
-        MenuReq menuReq = new MenuReq();
-        List<MenuReq.MenuButtonReq> menuButtonReqList = new ArrayList<>();
-        MenuReq.MenuButtonReq menuButtonReq = menuReq.new MenuButtonReq();
-        menuButtonReq.setName("测试1");
-        menuButtonReq.setType("view");
-        menuButtonReq.setUrl("http://www.shdim.cn");
-        menuButtonReqList.add(menuButtonReq);
-        menuReq.setButton(menuButtonReqList);
-        MenuClient menuClient = new MenuClient();
-        menuClient.menuCreate(st, menuCreate, menuReq);
-        /*model.addAttribute("admin", new Admin());
-        return LOGIN_PAGE;*/
+        String st = accessTokenClient.getAccessToken();
         return "获取到的token为："+st;
     }
 
